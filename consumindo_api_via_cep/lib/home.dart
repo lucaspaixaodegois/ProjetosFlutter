@@ -1,20 +1,24 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class Home extends StatefulWidget {
+  const Home({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
-  TextEditingController txtcep = new TextEditingController();
+  TextEditingController txtcep = TextEditingController();
   String resultado = "";
 
   _consultaCep() async {
     //pegando o cep informado
     String cep = txtcep.text;
-
     //configurando a url
     String url = "https://viacep.com.br/ws/$cep/json/";
 
@@ -33,42 +37,45 @@ class _HomeState extends State<Home> {
     //atualizar os dados em tela
     setState(() {
       resultado =
-          "\nCidade: $cidade - $uf \n Logradouro: $logradouro.\n Bairro: $bairro.";
+          "\nCidade: $cidade - $uf\nLogradouro: $logradouro          \nBairro: $bairro.";
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Consultando  um CEP vai API"),
-        backgroundColor: Colors.greenAccent,
-      ),
-      body: Container(
-          padding: EdgeInsets.all(40),
+        appBar: AppBar(
+          title: const Text("Consultando  um CEP vai API"),
+          backgroundColor: Colors.blue.shade400,
+        ),
+        body: Container(
+          alignment: Alignment.center,
+          color: Colors.blue.shade50,
+          padding: const EdgeInsets.all(30),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              TextField(
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  labelText: "Informe um CEP, Ex:77020514",
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                TextField(
+                  keyboardType: TextInputType.number,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "Informe um CEP, Ex:77020514",
+                  ),
+                  style: const TextStyle(fontSize: 25),
+                  controller: txtcep,
                 ),
-                style: TextStyle(fontSize: 25),
-              ),
-              Text(
-                "Resultado da busca:$resultado",
-                style: TextStyle(fontSize: 25),
-              ),
-              ElevatedButton(
-                child: Text(
-                  "Consultar",
-                  style: TextStyle(fontSize: 15),
+                ElevatedButton(
+                  onPressed: _consultaCep,
+                  child: const Text(
+                    'Consultar',
+                    style: TextStyle(fontSize: 25),
+                  ),
                 ),
-                onPressed: _consultaCep,
-              ),
-            ],
-          )),
-    );
+                Text(
+                  "Resultado da busca:\n\n $resultado",
+                  style: const TextStyle(fontSize: 25),
+                ),
+              ]),
+        ));
   }
 }
