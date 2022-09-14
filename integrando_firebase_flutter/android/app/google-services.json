@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "168917641619",
+    "project_id": "crudexemploflutter-e0332",
+    "storage_bucket": "crudexemploflutter-e0332.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168917641619:android:013b0589380748bc8a2066",
+        "android_client_info": {
+          "package_name": "com.example.integrando_firebase_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168917641619-pbivpn1j0g4rpasvterhbl30pb67o0ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANy1EF8ftRSo9aqflX5YTbGcL85k6pQO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168917641619-pbivpn1j0g4rpasvterhbl30pb67o0ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
