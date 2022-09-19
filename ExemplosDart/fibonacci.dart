@@ -20,5 +20,6 @@ void main() {
   int previousNumber1 = 0, previousNumber2 = 1, total = 15;
   print(previousNumber1);
   print(previousNumber2);
+
   printFibonacciSeries(total - 2, previousNumber1, previousNumber2);
 }
