@@ -24,13 +24,13 @@ void main() {
     "Natal em família!!",
     "Almoço de domingo na casa da mãe!!"
   ];
-  /*
+
   //outra estrutura do for para quando não sabemos o total de itens por exemplo.
   for (var postagem in postagens) {
     print("Titulo: $postagem ");
     print("----");
   }
-   */
+
   //outra forma de fazer while, porém ele executa pelo menos uma vez.
   var numero = 1;
   do {
