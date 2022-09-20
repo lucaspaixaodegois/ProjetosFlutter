@@ -12,6 +12,7 @@ class Firebase {
 }
 
 class MyApp extends StatelessWidget {
+  static const String title = "Configurando Firebase ";
   const MyApp({super.key});
 
   // This widget is the root of your application.
