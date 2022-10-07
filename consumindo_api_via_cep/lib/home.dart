@@ -46,11 +46,11 @@ class _HomeState extends State<Home> {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Consultando  um CEP vai API"),
-          backgroundColor: Colors.blue.shade400,
+          backgroundColor: Colors.green,
         ),
         body: Container(
           alignment: Alignment.center,
-          color: Colors.blue.shade50,
+          color: Colors.green.shade50,
           padding: const EdgeInsets.all(30),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
