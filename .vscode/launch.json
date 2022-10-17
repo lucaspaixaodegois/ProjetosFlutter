@@ -1,0 +1,68 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "consumindo_api_via_cep",
+      "cwd": "consumindo_api_via_cep",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "consumindo_api_via_cep (profile mode)",
+      "cwd": "consumindo_api_via_cep",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "consumindo_api_via_cep (release mode)",
+      "cwd": "consumindo_api_via_cep",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "integrando_firebase_flutter",
+      "cwd": "integrando_firebase_flutter",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "integrando_firebase_flutter (profile mode)",
+      "cwd": "integrando_firebase_flutter",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "integrando_firebase_flutter (release mode)",
+      "cwd": "integrando_firebase_flutter",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    },
+    {
+      "name": "meu_primeiro_app",
+      "cwd": "meu_primeiro_app",
+      "request": "launch",
+      "type": "dart"
+    },
+    {
+      "name": "meu_primeiro_app (profile mode)",
+      "cwd": "meu_primeiro_app",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "meu_primeiro_app (release mode)",
+      "cwd": "meu_primeiro_app",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "release"
+    }
+  ]
+}
