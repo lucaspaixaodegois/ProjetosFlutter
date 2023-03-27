@@ -59,7 +59,7 @@ class _HomeState extends State<Home> {
                   keyboardType: TextInputType.number,
                   decoration: const InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: "Informe um CEP, Ex:77020514",
+                    labelText: "Informe um CEP , Ex:77020514",
                   ),
                   style: const TextStyle(fontSize: 25),
                   controller: txtcep,
